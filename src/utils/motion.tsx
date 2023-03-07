@@ -14,12 +14,12 @@ export const navVariants = {
 		transition: {
 			type: "spring",
 			stiffness: 80,
-			delay: 1,
+			delay: 0.5,
 		},
 	},
 };
 
-export const slideIn = (direction, type, delay, duration) => ({
+export const slideIn = (direction: any, type: any, delay: any, duration: any) => ({
 	hidden: {
 		x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
 		y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
@@ -36,7 +36,7 @@ export const slideIn = (direction, type, delay, duration) => ({
 	},
 });
 
-export const staggerContainer: any   = (
+export const staggerContainer: any = (
 	staggerChildren: any,
 	delayChildren: any
 ) => ({
@@ -49,7 +49,7 @@ export const staggerContainer: any   = (
 	},
 });
 
-export const textVariant = (delay) => ({
+export const textVariant = (delay: any) => ({
 	hidden: {
 		y: 50,
 		opacity: 0,
@@ -59,7 +59,7 @@ export const textVariant = (delay) => ({
 		opacity: 1,
 		transition: {
 			type: "spring",
-			duration: 1.25,
+			duration: 0.7,
 			delay,
 		},
 	},
@@ -90,7 +90,7 @@ export const textVariant2 = {
 	},
 };
 
-export const fadeIn = (direction, type, delay, duration) => ({
+export const fadeIn = (direction: any, type: any, delay: any, duration: any) => ({
 	hidden: {
 		x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
 		y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
@@ -109,25 +109,27 @@ export const fadeIn = (direction, type, delay, duration) => ({
 	},
 });
 
-export const planetVariants = (direction) => ({
+export const planetVariants = (direction : any) => ({
 	hidden: {
 		x: direction === "left" ? "-100%" : "100%",
 		rotate: 120,
+		opacity: 0,
 	},
 	show: {
 		x: 0,
 		rotate: 0,
+		opacity: 1,
 		transition: {
 			type: "spring",
-			duration: 1.8,
-			delay: 0.5,
+			duration: 0.9,
+			delay: 0.1,
 		},
 	},
 });
 
-export const zoomIn = (delay, duration) => ({
+export const zoomIn = (delay : any, duration : any) => ({
 	hidden: {
-		scale: 0,
+		scale: 0.6,
 		opacity: 0,
 	},
 	show: {
