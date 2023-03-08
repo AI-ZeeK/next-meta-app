@@ -34,6 +34,8 @@ const WhatsNew = () => (
 				variants={planetVariants("right")}
 				className={`flex-1 ${styles.flexCenter}`}>
 				<Image
+					width={500}
+					height={500}
 					src="/whats-new.png"
 					alt="get-started"
 					className="w-[90%] h-[90%] object-contain"

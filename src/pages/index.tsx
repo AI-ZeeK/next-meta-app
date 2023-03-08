@@ -26,11 +26,9 @@ export default function Home() {
 			<main>
 				<div className="bg-primary-black overflow-hidden">
 					<Navbar />
-					{/* <Hero />
+					<Hero />
 
-					<div className="relative">
-						<About />
-					</div>
+					<div className="relative"><About /> </div>
 					<div className="gradient-03 z-0" />
 					<Explore />
 					<div className="relative">
@@ -44,7 +42,7 @@ export default function Home() {
 						<div className="gradient-03 z-0" />
 						<Feedback />
 					</div>
-					<Footer /> */}
+					<Footer />
 				</div>
 			</main>
 		</>
