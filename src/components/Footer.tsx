@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { socials } from "../constants/Index";
-
+import { BsInstagram, BsTwitter, BsLinkedin, BsFacebook } from "react-icons/bs";
 import styles from "../styles/Index";
 import { footerVariants } from "../utils/motion";
 
@@ -41,14 +41,18 @@ const Footer = () => {
 						</p>
 
 						<div className="flex gap-4">
-							{socials.map((social) => (
+							{/* {socials.map((social) => (
 								<img
 									key={social.name}
 									src={social.url}
 									alt={social.name}
 									className="w-[24px] h-[24px] object-contain cursor-pointer"
 								/>
-							))}
+							))} */}
+							<BsTwitter className="cursor-pointer" />
+							<BsLinkedin className="cursor-pointer" />
+							<BsFacebook className="cursor-pointer" />
+							<BsInstagram className="cursor-pointer" />
 						</div>
 					</div>
 				</div>
