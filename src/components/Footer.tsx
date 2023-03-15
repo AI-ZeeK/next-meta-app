@@ -49,10 +49,10 @@ const Footer = () => {
 									className="w-[24px] h-[24px] object-contain cursor-pointer"
 								/>
 							))} */}
-							<BsTwitter className="cursor-pointer" />
-							<BsLinkedin className="cursor-pointer" />
-							<BsFacebook className="cursor-pointer" />
-							<BsInstagram className="cursor-pointer" />
+							<BsTwitter className="cursor-pointer text-white text-3xl" />
+							<BsLinkedin className="cursor-pointer text-white text-3xl" />
+							<BsFacebook className="cursor-pointer text-white text-3xl" />
+							<BsInstagram className="cursor-pointer text-white text-3xl" />
 						</div>
 					</div>
 				</div>
